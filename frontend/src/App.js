@@ -1,8 +1,19 @@
 import React, { Component } from "react";
 
+import GlobalStyle from "./styles/global";
+import { Container, Content } from "./styles";
+import Upload from "./components/upload";
+
 class App extends Component {
   render() {
-    return <div className="App">Ae</div>;
+    return (
+      <Container>
+        <GlobalStyle />
+        <Content>
+          <Upload />
+        </Content>
+      </Container>
+    );
   }
 }
 
