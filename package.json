@@ -6,7 +6,8 @@
   "scripts": {
     "start": "concurrently \"npm run api\" \"npm run client\"",
     "api": "cd backend && npm start",
-    "client": "cd frontend && npm start"
+    "client": "cd frontend && npm start",
+    "postinstall": "npm install --prefix backend && npm install --prefix frontend"
   },
   "repository": {
     "type": "git",
