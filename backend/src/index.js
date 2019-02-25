@@ -4,7 +4,7 @@ const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const path = require("path");
-const cors = require('cors');
+const cors = require("cors");
 
 const app = express();
 
@@ -22,4 +22,4 @@ app.use(
 );
 app.use(require("./routes"));
 
-app.listen(3000);
+app.listen(process.env.PORT || 3001);
