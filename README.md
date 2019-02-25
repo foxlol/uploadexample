@@ -1,4 +1,4 @@
-Backedn environment configuration (.env file):
+Backend environment configuration (.env file):
 
 APP_URL
 MONGODB_URL
